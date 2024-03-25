@@ -4,3 +4,14 @@ block content
   h1= title
   p Sai Shivani Yashaswini Putta
   button(type="button", class="btn btn-primary") Iam a button
+  div#double Up the amount
+  button(type="button" class="btn btn-primary" onclick="double()") Power
+  script.
+      let value = 0;
+      let power = 1;
+      function double() {
+        value =value + 1;
+        power =power * 2;
+        document.getElementById('double').innerText = `Two to the power ${value} is ${power}`;
+      }
+      
