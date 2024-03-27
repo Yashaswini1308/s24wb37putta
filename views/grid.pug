@@ -18,6 +18,6 @@ block content
         - for(let i=0; i<rows; i++) {
             tr#middle
             - for(let j=0; j<cols; j++) {
-                td= 1 + i + j*rows
+                td(style="padding: 7px;")= Math.min(i + 1, j + 1)
             -}
         - }
